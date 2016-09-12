@@ -5,8 +5,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="/stylesheets/gsap.css">
 
-</head>
+  <script>
+    var tl = new TimelineMax();
+    function pauseAnimationAt(time) {
+      tl.pause(time); // timeline is a TimelineMax instance
+    }
 
+    function getTotalDurationInSecond() {
+      return tl.totalDuration();
+    }
+  </script>
+</head>
 <body>
 
 <div id="demoWrapper" class="example">
@@ -14,12 +23,20 @@
     <div id="content">
       <div id="info">
         <img src="http://www.greensock.com/wp-content/uploads/custom/codepen/feature_robust.png" width="240" height="151" id="feature"/>
-        <img src="http://www.greensock.com/wp-content/uploads/custom/codepen/feature_robust.png" width="120" height="76" id="small"/>
       </div>
-
   </div>
 </div>
 
+<script>
+  (function() {
+    var feature = $("#feature");
+    TweenLite.set(feature, {visibility:"visible"})
+    //instantiate a TimelineLite
+    tl.from(feature, 1.5, {scale:.5, autoAlpha:0});
+    // tl.progress(0);
+    // tl.play();
+  })();
+</script>
 <!-- <script src="/javascripts/gsap.js"></script> -->
 </body>
 </html>
