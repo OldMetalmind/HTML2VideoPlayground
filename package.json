@@ -1,0 +1,27 @@
+{
+  "name": "videoHTmlRender",
+  "version": "0.0.1",
+  "private": true,
+  "repository":
+  {
+    "type":"git",
+    "url":"https://github.com/smithereen/HTML2VideoPlayground"
+  },
+  "scripts": {
+    "start": "node base.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "casper": "^0.1.1",
+    "casperjs": "^1.1.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "ffmpeg": "0.0.4",
+    "gsap": "^1.19.0",
+    "morgan": "~1.7.0",
+    "phantom": "^2.1.20",
+    "serve-favicon": "~2.3.0",
+    "webpage": "^0.3.0"
+  }
+}
