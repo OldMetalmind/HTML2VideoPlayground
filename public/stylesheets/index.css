@@ -1,0 +1,19 @@
+body, h1, h2, h3, p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+body {
+  background-color:#fff;
+}
+
+#target {
+  position: relative;
+  float: left;
+  visibility: hidden;
+}
+
+.ui-widget-content {
+  background-color:rgba(255, 255, 255, 0.2);
+}

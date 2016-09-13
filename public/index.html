@@ -18,20 +18,14 @@
 </head>
 <body>
 
-<div id="demoWrapper" class="example">
-  <div id="bg"></div>
-    <div id="content">
-      <div id="info">
-        <img src="http://kingofwallpapers.com/world/world-002.jpg" width="200" height="200" id="feature"/>
-      </div>
-  </div>
+<img src="http://kingofwallpapers.com/world/world-002.jpg" width="200" height="200" id="feature"/>
 </div>
 
 <script>
   (function() {
-    var feature = $("#feature");
-    TweenLite.set(feature, {visibility:"visible"});
-    timeline.from(feature, 1.5, {scale:.5, autoAlpha:0});
+    var target = $("#feature");
+    TweenLite.set(target, {visibility:"visible"});
+    timeline.from(target, 1.5, {scale:.5, autoAlpha:0});
   })();
 </script>
 </body>
