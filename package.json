@@ -1,6 +1,6 @@
 {
   "name": "videoHTmlRender",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "repository":
   {
@@ -8,7 +8,7 @@
     "url":"https://github.com/smithereen/HTML2VideoPlayground"
   },
   "scripts": {
-    "start": "node base.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "body-parser": "~1.15.1",

@@ -38,3 +38,7 @@ jspm_packages
 
 #Output folder
 out
+
+#ignore Videos
+*.mp4
+video
