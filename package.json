@@ -8,7 +8,9 @@
     "url":"https://github.com/smithereen/HTML2VideoPlayground"
   },
   "scripts": {
-    "start": "node index.js"
+    "prestart":"node frames.js",
+    "start": "node video.js",
+    "poststart":"rm -rf out"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
